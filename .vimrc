@@ -32,6 +32,7 @@ Plugin 'juvenn/mustache'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -67,3 +68,9 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.DS_Store']
 
 colorscheme molokai
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd vimenter * NERDTree
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
