@@ -34,6 +34,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'chilicuil/conque'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -41,6 +43,9 @@ filetype plugin indent on    " required
 set number
 
 let mapleader = ","
+
+imap <leader>t <Esc>:tabnew<CR>
+imap <leader>w <Esc>:tabclose<CR>
 
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_smart_case = 1
