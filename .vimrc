@@ -1,3 +1,6 @@
+" $ git clone https://github.com/gmarik/Vundle.vim.git
+" ~/.vim/bundle/Vundle.vim
+
 syntax on
 set nocompatible              " be iMproved, required
 set encoding=utf8
@@ -36,6 +39,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'chilicuil/conque'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'Lokaltog/vim-easymotion'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,9 +47,6 @@ filetype plugin indent on    " required
 set number
 
 let mapleader = ","
-
-imap <leader>t <Esc>:tabnew<CR>
-imap <leader>w <Esc>:tabclose<CR>
 
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_smart_case = 1
@@ -76,11 +77,12 @@ let NERDTreeIgnore = ['tmp', '.DS_Store']
 colorscheme molokai
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-autocmd vimenter * NERDTree
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store
+
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Rainbow Paranthesis
 au VimEnter * RainbowParenthesesToggle
