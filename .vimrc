@@ -1,5 +1,12 @@
-" $ git clone https://github.com/gmarik/Vundle.vim.git
-" ~/.vim/bundle/Vundle.vim
+" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+set encoding=utf-8 nobomb
+set binary
+set noeol
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+if exists("&undodir")
+    set undodir=~/.vim/undo
+endif
 
 syntax on
 set nocompatible              " be iMproved, required
