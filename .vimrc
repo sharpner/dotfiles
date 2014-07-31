@@ -34,7 +34,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
-Plugin 'Shougo/neosnippet'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tomasr/molokai'
 Plugin 'mklabs/grunt.vim'
