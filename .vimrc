@@ -47,6 +47,10 @@ Plugin 'chilicuil/conque'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'majutsushi/tagbar' 
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'dgryski/vim-godef'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -85,11 +89,22 @@ colorscheme molokai
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
+autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow
+
+au BufRead,BufNewFile *.md set filetype=markdown
+
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
+let g:godef_split=0
 
 " Rainbow Paranthesis
 au VimEnter * RainbowParenthesesToggle
