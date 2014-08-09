@@ -47,8 +47,6 @@ Plugin 'chilicuil/conque'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'majutsushi/tagbar' 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'dgryski/vim-godef'
 
 call vundle#end()            " required
