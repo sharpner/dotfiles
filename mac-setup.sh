@@ -54,7 +54,7 @@ brew cask install gpgtools
 #installing vim dependencies
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-cp vimrc ~/.vimrc
+ln -s `pwd`/vimrc ~/.vimrc
 #install all bundled git plugins
 vim +PluginInstall +qall
 
