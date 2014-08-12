@@ -25,6 +25,7 @@ mkdir -p ~/.ssh/
 mkdir -p ~/.vim/backups
 mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
+mkdir -p ~/bin
 
 #install fonts
 cp font/*.otf ~/Library/Fonts/
@@ -39,6 +40,7 @@ brew install mongodb
 brew install go
 brew install git
 brew install vim --override-system-vi --with-python3
+brew install npm
 
 #global git setup
 git config --global user.name "n.wagensonner"
