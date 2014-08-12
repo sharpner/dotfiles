@@ -44,6 +44,8 @@ brew install git
 brew install vim --override-system-vi --with-python3
 brew install npm
 brew install irssi 
+brew install mercurial
+brew install bazaar
 
 #global git setup
 git config --global user.name "n.wagensonner"
