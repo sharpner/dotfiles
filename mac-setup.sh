@@ -1,3 +1,6 @@
+#prompt xcode developer tools
+xcode-select --install
+
 #settings
 echo "Input hostname for this machine"
 read hostname
@@ -6,6 +9,15 @@ if [ -z "$hostname" ] ; then
   echo "Hostname must be set."
   exit 1
 fi 
+
+#get root access"
+echo "We need root access to set the hostname"
+
+#configure system
+sudo scutil --set ComputerName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set LocalHostName $hostname
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $hostname
 
 #create folder structure
 mkdir -p ~/Development/Go
@@ -42,6 +54,8 @@ brew cask install gpgtools
 #installing vim dependencies
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+cp vimrc ~/.vimrc
+#install all bundled git plugins
 vim +PluginInstall +qall
 
 #go deps
@@ -49,12 +63,6 @@ go get code.google.com/p/rog-go/exp/cmd/godef
 go get code.google.com/p/go.tools/cmd/cover
 go get code.google.com/p/go.tools/cmd/godoc
 go get code.google.com/p/go.tools/cmd/vet
-
-#configure system
-sudo scutil --set ComputerName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set LocalHostName $hostname
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $hostname
 
 #install configuration files
 cp bash_profile ~/.bash_profile
@@ -73,8 +81,3 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 echo "All done. "
 echo "Install your private key file to ~/.ssh/id_rsa"
-
-
-
-
-
