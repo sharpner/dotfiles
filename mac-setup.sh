@@ -64,8 +64,9 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install vlc
 brew cask install gpgtools
-#brew cask install istat-menus
+brew cask install virtualbox
 brew cask install menumeters
+brew cask install vagrant
 
 source ~/.bash_profile
 
