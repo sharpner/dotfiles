@@ -65,6 +65,8 @@ let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
+let g:syntastic_html_checkers=['']
+
 
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
