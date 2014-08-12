@@ -56,6 +56,7 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install vlc
 brew cask install gpgtools
+brew cask install istat-menus
 
 #installing vim dependencies
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
