@@ -9,3 +9,10 @@ export GOPATH=/Users/nwagensonner/Develop/Go
 export GOBIN=/Users/nwagensonner/Develop/Go/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$GOBIN:/usr/local/bin/:/usr/local/sbin:/Users/nwagensonner/bin:$PATH
+
+# aliases
+alias gop='cd $GOPATH'
+alias ll='ls -l'
+
+# git aliases
+alias gpr='git pull --rebase'
