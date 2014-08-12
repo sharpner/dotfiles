@@ -9,6 +9,7 @@ fi
 
 #create folder structure
 mkdir -p ~/Development/Go
+mkdir -p ~/.ssh/
 mkdir -p ~/.vim/backups
 mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
@@ -32,6 +33,7 @@ brew cask install google-chrome
 brew cask install iterm2
 brew cask install dropbox
 brew cask install vlc
+brew cask install gpgtools
 
 #installing vim dependencies
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -50,8 +52,8 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 #install configuration files
 cp bash_profile ~/.bash_profile
-
-#some mac specific settings
+#install ssh configuration for autocompletion
+cp ssh_config ~/.ssh/config
 
 #disable default save to cloud
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
@@ -59,4 +61,6 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 #disable app quarantine
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-
+#faster responses on resume
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
