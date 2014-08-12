@@ -9,7 +9,7 @@ export GOPATH=/Users/nwagensonner/Development/Go
 export GOBIN=/Users/nwagensonner/Development/Go/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:/Users/nwagensonner/bin
-export PATH=$GOBIN:/usr/local/bin/:/usr/local/sbin:/Users/nwagensonner/bin:$PATH
+export PATH=$GOBIN:/usr/local/bin:/usr/local/sbin:/Users/nwagensonner/bin:$PATH
 
 # utility commands
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update'
