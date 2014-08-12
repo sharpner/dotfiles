@@ -50,6 +50,7 @@ brew install bazaar
 #global git setup
 git config --global user.name "n.wagensonner"
 git config --global user.email "n.wagensonner@manyminds.de"
+git config --global push.default simple
 
 #install cask for brew
 brew install caskroom/cask/brew-cask
