@@ -13,6 +13,11 @@ fi
 #get root access"
 echo "We need root access to set the hostname"
 
+#install configuration files
+cp bash_profile ~/.bash_profile
+#install ssh configuration for autocompletion
+cp ssh_config ~/.ssh/config
+
 #configure system
 sudo scutil --set ComputerName $hostname
 sudo scutil --set HostName $hostname
@@ -57,6 +62,8 @@ brew cask install dropbox
 brew cask install vlc
 brew cask install gpgtools
 brew cask install istat-menus
+
+source ~/.bash_profile
 
 #installing vim dependencies
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
