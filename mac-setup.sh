@@ -61,6 +61,7 @@ brew cask install dropbox
 brew cask install vlc
 brew cask install gpgtools
 #brew cask install istat-menus
+brewk cask install menumeters
 
 source ~/.bash_profile
 
