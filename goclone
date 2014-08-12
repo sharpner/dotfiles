@@ -1,0 +1,33 @@
+#/!bin/bash
+repository=git.manyminds.de
+
+if [ -z "$GOPATH" ] ; then
+  echo '$GOPATH not set.'
+  exit 1
+fi
+
+cd $GOPATH
+
+if [ $# -lt 1 ] ; then
+  echo "Usage: clm group/project"
+  exit 1
+fi 
+
+project=`echo $1 | cut -f2 -d"/"`
+group=`echo $1 | cut -f1 -d"/"`
+
+repo=$1
+target=$GOPATH/src/$repository/$group
+
+if [ -d $target ]; then
+  mkdir -p $target 
+
+  echo "Created folder "$target
+fi
+
+cd $target
+
+git clone git@$repository:$1.git
+
+cd $GOPATH
+ln -s $target _$project

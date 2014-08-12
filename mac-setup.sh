@@ -29,6 +29,9 @@ mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 mkdir -p ~/bin
 
+#install bin tools
+cp goclone ~/bin
+
 #install fonts
 cp font/*.otf ~/Library/Fonts/
 
@@ -78,6 +81,7 @@ go get code.google.com/p/rog-go/exp/cmd/godef
 go get code.google.com/p/go.tools/cmd/cover
 go get code.google.com/p/go.tools/cmd/godoc
 go get code.google.com/p/go.tools/cmd/vet
+go get github.com/tools/godep
 
 #install configuration files
 cp bash_profile ~/.bash_profile
