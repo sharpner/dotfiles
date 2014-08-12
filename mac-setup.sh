@@ -91,6 +91,8 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 #faster responses on resume
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+chflags nohidden ~/Library
 
 echo "All done. "
 echo "Install your private key file to ~/.ssh/id_rsa"
