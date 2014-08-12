@@ -41,8 +41,10 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 #go deps
-go get -v code.google.com/p/rog-go/exp/cmd/godef
-go get -v code.google.com/p/go.tools/cmd/cover
+go get code.google.com/p/rog-go/exp/cmd/godef
+go get code.google.com/p/go.tools/cmd/cover
+go get code.google.com/p/go.tools/cmd/godoc
+go get code.google.com/p/go.tools/cmd/vet
 
 #configure system
 sudo scutil --set ComputerName $hostname
