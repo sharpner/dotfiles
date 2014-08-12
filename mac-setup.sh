@@ -25,6 +25,10 @@ brew install go
 brew install git
 brew install vim --override-system-vi --with-python3
 
+#global git setup
+git config --global user.name "n.wagensonner"
+git config --global user.email "n.wagensonner@manyminds.de"
+
 #install cask for brew
 brew install caskroom/cask/brew-cask
 
@@ -66,3 +70,11 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 #faster responses on resume
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+echo "All done. "
+echo "Install your private key file to ~/.ssh/id_rsa"
+
+
+
+
+
