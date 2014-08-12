@@ -5,8 +5,8 @@ PS1="\[\033[1m\]\[\033[$username\]\u\[\033[37m\]@\[\033[1m\]\[\033[$hostname\]\h
 
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh;
 
-export GOPATH=/Users/nwagensonner/Develop/Go
-export GOBIN=/Users/nwagensonner/Develop/Go/bin
+export GOPATH=/Users/nwagensonner/Development/Go
+export GOBIN=/Users/nwagensonner/Development/Go/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:/Users/nwagensonner/bin
 export PATH=$GOBIN:/usr/local/bin/:/usr/local/sbin:/Users/nwagensonner/bin:$PATH
