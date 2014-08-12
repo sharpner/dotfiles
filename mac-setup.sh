@@ -60,7 +60,7 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install vlc
 brew cask install gpgtools
-brew cask install istat-menus
+#brew cask install istat-menus
 
 source ~/.bash_profile
 
