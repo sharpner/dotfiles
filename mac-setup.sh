@@ -1,6 +1,3 @@
-#prompt xcode developer tools
-xcode-select --install
-
 #settings
 echo "Input hostname for this machine"
 read hostname
