@@ -26,6 +26,9 @@ mkdir -p ~/.vim/backups
 mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 
+#install fonts
+cp font/*.otf ~/Library/Fonts/
+
 #install homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew update
