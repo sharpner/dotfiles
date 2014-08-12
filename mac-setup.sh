@@ -93,6 +93,10 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 chflags nohidden ~/Library
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+#if the hard disk gets very low, run the following command
+#hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 echo "All done. "
 echo "Install your private key file to ~/.ssh/id_rsa"
