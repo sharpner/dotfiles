@@ -59,7 +59,6 @@ git config --global push.default simple
 brew install caskroom/cask/brew-cask
 
 #install closed source applications
-brew cask install google-chrome
 brew cask install iterm2
 brew cask install dropbox
 brew cask install vlc
