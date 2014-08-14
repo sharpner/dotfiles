@@ -43,6 +43,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'vim-scripts/Conque-GDB'
 Plugin 'chilicuil/conque'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Lokaltog/vim-easymotion'
@@ -67,7 +68,6 @@ let g:syntastic_enable_signs=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_html_checkers=['']
 
-
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
@@ -80,8 +80,12 @@ au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 
+let tempFile = tempname()
+
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+au FileType go nmap <Leader>h :!go build -gcflags "-N -l" -o tempFile<CR><CR> <ESC>:ConqueGdb tempFile<CR><CR>
 " NERDTree
-nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>m :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.DS_Store']
 
