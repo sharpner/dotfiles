@@ -100,6 +100,8 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components'
+
 let g:miniBufExplMapWindowNavVim = 1 
 let g:miniBufExplMapWindowNavArrows = 1 
 let g:miniBufExplMapCTabSwitchBufs = 1 
