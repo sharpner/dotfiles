@@ -66,6 +66,7 @@ brew cask install gpgtools
 brew cask install virtualbox
 brew cask install menumeters
 brew cask install vagrant
+brew cask install seil 
 
 source ~/.bash_profile
 
