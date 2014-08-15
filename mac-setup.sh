@@ -102,6 +102,9 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 chflags nohidden ~/Library
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+#disable startup sound
+sudo nvram SystemAudioVolume=%80
+
 #if the hard disk gets very low, run the following command
 #hash tmutil &> /dev/null && sudo tmutil disablelocal
 
