@@ -113,7 +113,7 @@ let g:miniBufExplModSelTarget = 1
 let g:godef_split=0
 
 " Rainbow Paranthesis
-au VimEnter * RainbowParenthesesToggle
+" au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces

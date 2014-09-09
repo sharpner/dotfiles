@@ -41,6 +41,7 @@ brew update
 
 #install brew dependencies
 brew install wget
+brew install weechat
 brew install mc
 brew install mongodb
 brew install go
