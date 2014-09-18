@@ -83,7 +83,7 @@ au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 let tempFile = tempname()
 
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-au FileType go nmap <Leader>h :!go build -gcflags "-N -l" -o tempFile<CR><CR> <ESC>:ConqueGdb tempFile<CR><CR>
+au FileType go nmap <Leader>h :!go build -gcflags "-N -l" -o /tmp/compile-%-tempFile<CR><CR> <ESC>:ConqueGdb /tmp/compile-%-tempFile<CR><CR>
 " NERDTree
 nmap <leader>m :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
