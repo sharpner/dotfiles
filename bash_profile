@@ -23,3 +23,10 @@ alias lld='ls -lF | grep '^d''
 
 # git aliases
 alias gpr='git pull --rebase'
+
+
+#toolmanager settings
+export TM_BUCKET_UUID=4983F680-1B8B-4C46-9E2B-D6E0DF9D61D9
+export TM_UNIVEDO_URI=ws://localhost:9011
+export TM_PERSPECTIVE_UUUID=9a0baf58-1922-4c89-8b16-c45ab3e66163
+export TM_SERVER_PORT=5000
