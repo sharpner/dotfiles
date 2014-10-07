@@ -1,5 +1,5 @@
 #/!bin/bash
-repository=git.manyminds.de
+repository=github.com
 
 if [ -z "$GOPATH" ] ; then
   echo '$GOPATH not set.'
