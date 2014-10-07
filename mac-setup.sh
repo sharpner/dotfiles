@@ -51,6 +51,8 @@ brew install npm
 brew install irssi 
 brew install mercurial
 brew install bazaar
+brew install ctags
+brew install boot2docker
 
 #global git setup
 git config --global user.name "n.wagensonner"

@@ -112,6 +112,11 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 let g:godef_split=0
 
+
+" Tagbar settings
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
+noremap <Leader>y :TagbarToggle<CR>       
+
 " Rainbow Paranthesis
 " au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
