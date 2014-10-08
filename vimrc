@@ -49,6 +49,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'majutsushi/tagbar' 
 Plugin 'dgryski/vim-godef'
+Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
