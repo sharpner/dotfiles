@@ -49,6 +49,8 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'majutsushi/tagbar' 
 Plugin 'dgryski/vim-godef'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'maksimr/vim-jsbeautify'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -125,3 +127,11 @@ noremap <Leader>y :TagbarToggle<CR>
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+
+" Settings for ember plugins
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
