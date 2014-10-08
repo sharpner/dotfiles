@@ -36,7 +36,7 @@ cp goclone ~/bin
 cp font/*.otf ~/Library/Fonts/
 
 #install homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 
 #install brew dependencies
