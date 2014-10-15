@@ -24,6 +24,7 @@ alias lld='ls -lF | grep '^d''
 # git aliases
 alias gpr='git pull --rebase'
 
+alias vnc='open /System/Library/CoreServices/Screen\ Sharing.app/'
 
 #toolmanager settings
 export TM_BUCKET_UUID=4983F680-1B8B-4C46-9E2B-D6E0DF9D61D9
