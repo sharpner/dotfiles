@@ -9,7 +9,7 @@ fi
 cd $GOPATH
 
 if [ $# -lt 1 ] ; then
-  echo "Usage: clm group/project [repository]"
+  echo "Usage: goclone group/project [repository]"
   exit 1
 fi 
 
@@ -21,7 +21,7 @@ group=`echo $1 | cut -f1 -d"/"`
 project=`echo $1 | cut -f2 -d"/"`
 
 if [ -z "$project" ] || [ -z  "$group" ] ; then
-  echo "Usage: clm group/project [repository]"
+  echo "Usage: goclone group/project [repository]"
   exit 1
 fi
 
