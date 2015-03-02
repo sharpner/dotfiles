@@ -54,7 +54,7 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-surround'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -64,11 +64,6 @@ set number
 let mapleader = ","
 
 let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
 
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
@@ -95,9 +90,11 @@ au FileType go nmap <Leader>s <Plug>(go-implements)
 let tempFile = tempname()
 
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-au FileType go nmap <Leader>h :!go build -gcflags "-N -l" -o /tmp/compile-%-tempFile<CR><CR> <ESC>:ConqueGdb /tmp/compile-%-tempFile<CR><CR>
 " NERDTree
 nmap <leader>m :NERDTreeToggle<CR>
+
+" fix win 
+nmap <leader><leader># <ESC>:%s/<c-M>$//
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.DS_Store']
 
@@ -178,5 +175,13 @@ let g:tagbar_type_go = {
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
 "Nerdtree
 map <leader>r :NERDTreeFind<cr>
+
+"Gdb command
+au FileType go nmap <Leader>h :!go build -gcflags "-N -l" -o /tmp/compile-%-tempFile<CR><CR> <ESC>:ConqueGdb /tmp/compile-%-tempFile<CR><CR>
+au BufUnload *.go :!rm /tmp/compile-*-tempFile  
