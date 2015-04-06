@@ -184,4 +184,4 @@ map <leader>r :NERDTreeFind<cr>
 
 "Gdb command
 au FileType go nmap <Leader>h :!go build -gcflags "-N -l" -o /tmp/compile-%-tempFile<CR><CR> <ESC>:ConqueGdb /tmp/compile-%-tempFile<CR><CR>
-au BufUnload *.go :!rm /tmp/compile-*-tempFile  
+au VimLeavePre *.go :!rm /tmp/compile-*-tempFile  
