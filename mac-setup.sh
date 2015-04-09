@@ -114,3 +114,13 @@ sudo nvram SystemAudioVolume=%80
 
 echo "All done. "
 echo "Install your private key file to ~/.ssh/id_rsa"
+
+
+
+echo "Now installing oh-my-zsh"
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+git clone git@github.com:powerline/fonts.git ~/dotfiles/powerline-fonts/
+cd ~/dotfiles/powerline-fonts/ && ./install.sh
+
+ln -s `pwd`/zshrc ~/.zshrc
