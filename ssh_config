@@ -1,5 +1,9 @@
-Host manyminds.de
+Host manyminds
   HostName manyminds.de
-  
-Host cryff.net
-  HostName cryff.net
+  Port 222
+  User nwagensonner
+
+Host manyminds-root
+  HostName manyminds.de
+  Port 222
+  User root
