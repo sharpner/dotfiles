@@ -82,11 +82,10 @@ ln -s `pwd`/vimrc ~/.vimrc
 vim +PluginInstall +qall
 
 #go deps
-go get code.google.com/p/rog-go/exp/cmd/godef
-go get code.google.com/p/go.tools/cmd/cover
-go get code.google.com/p/go.tools/cmd/godoc
-go get code.google.com/p/go.tools/cmd/vet
-go get github.com/tools/godep
+go get -u -a golang.org/x/tools/cmd/cover
+go get -u -a golang.org/x/tools/cmd/godoc
+go get -u -a golang.org/x/tools/cmd/vet
+go get -u -a github.com/tools/godep
 
 #install configuration files
 cp bash_profile ~/.bash_profile
@@ -111,16 +110,16 @@ sudo nvram SystemAudioVolume=%80
 
 #if the hard disk gets very low, run the following command
 #hash tmutil &> /dev/null && sudo tmutil disablelocal
-
-echo "All done. "
-echo "Install your private key file to ~/.ssh/id_rsa"
-
-
-
 echo "Now installing oh-my-zsh"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 git clone git@github.com:powerline/fonts.git ~/dotfiles/powerline-fonts/
-cd ~/dotfiles/powerline-fonts/ && ./install.sh
 
-ln -s `pwd`/zshrc ~/.zshrc
+#install powerline fonts
+cd ~/dotfiles/powerline-fonts/ && ./install.sh && cd ~/dotfiles
+
+rm ~/.zshrc && ln -s `pwd`/zshrc ~/.zshrc
+
+echo "All done. "
+echo "Install your private key file to ~/.ssh/id_rsa"
+echo "Run import-cacert.sh or sign-gdb.sh manually if necessary."
