@@ -24,6 +24,7 @@ alias lld='ls -lF | grep '^d''
 alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 alias top="top -o cpu"
 alias vim='nvim'
+alias cd='cd -P'
 
 export STATUSAPP_DB_TEST_URL='postgres://nwagensonner@localhost:5432/nwagensonner?sslmode=disable'
 export STATUSAPP_CONNECTION_STRING='postgres://nwagensonner@localhost/nwagensonner?sslmode=disable'
