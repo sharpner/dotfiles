@@ -70,7 +70,7 @@ brew cask install virtualbox
 brew cask install menumeters
 brew cask install vagrant
 brew cask install seil 
-
+brew cask install smoothmouse
 source ~/.bash_profile
 
 #installing vim dependencies
