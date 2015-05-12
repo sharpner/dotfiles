@@ -20,10 +20,10 @@ alias map="xargs -n1"
 alias gop='cd $GOPATH'
 alias ll='ls -l'
 alias lld='ls -lF | grep '^d''
-
+alias lsusb='system_profiler SPUSBDataType'
 alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 alias top="top -o cpu"
-alias vim='nvim'
+#alias vim='nvim'
 alias cd='cd -P'
 
 export STATUSAPP_DB_TEST_URL='postgres://nwagensonner@localhost:5432/nwagensonner?sslmode=disable'
