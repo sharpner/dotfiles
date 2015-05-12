@@ -52,6 +52,7 @@ brew install mercurial
 brew install bazaar
 brew install ctags
 brew install boot2docker
+brew install csfml
 
 #global git setup
 git config --global user.name "n.wagensonner"
