@@ -44,7 +44,7 @@ brew install wget
 brew install weechat
 brew install mc
 brew install mongodb
-brew install go
+brew install go --with-cc-all
 brew install git
 brew install vim --override-system-vi --with-python3
 brew install npm
