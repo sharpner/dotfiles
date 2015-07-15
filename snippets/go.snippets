@@ -146,5 +146,6 @@ endsnippet
 snippet err "Basic error handling" b
 if err != nil {
 	log.${1:Fatal}(err)
+	return err
 }
 endsnippet
