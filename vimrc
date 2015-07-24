@@ -23,6 +23,9 @@ au BufNewFile,BufRead *.json set ft=javascript
 au BufNewFile,BufRead *.mustache        setf mustache
 au BufRead,BufNewFile *.{yml,yaml} set foldmethod=indent
 
+let g:typescript_compiler_options = '-sourcemap -t es5 --emitDecoratorMetadata'
+
+
 set backspace=indent,eol,start
 
 " set the runtime path to include Vundle and initialize
@@ -57,6 +60,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'leafgarland/typescript-vim'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -102,6 +106,7 @@ let tempFile = tempname()
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 " NERDTree
 nmap <leader>m :NERDTreeToggle<CR>
+nmap <F2> :NERDTreeFind<CR>
 
 " fix win 
 nmap <leader><leader># <ESC>:%s/<c-M>$//
