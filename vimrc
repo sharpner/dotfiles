@@ -61,6 +61,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'tpope/vim-markdown'
+Plugin 'suan/vim-instant-markdown'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -195,7 +197,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 
 "Nerdtree
-map <leader>r :NERDTreeFind<cr>
+map <leader><leader>r :NERDTreeFind<cr>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

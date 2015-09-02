@@ -54,6 +54,9 @@ brew install ctags
 brew install boot2docker
 brew install csfml
 
+# for markdonw preview
+npm -g install instant-markdown-d
+
 #global git setup
 git config --global user.name "n.wagensonner"
 git config --global user.email "n.wagensonner@manyminds.de"
