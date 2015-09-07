@@ -53,6 +53,7 @@ brew install bazaar
 brew install ctags
 brew install boot2docker
 brew install csfml
+brew install graphviz 
 
 # for markdonw preview
 npm -g install instant-markdown-d
