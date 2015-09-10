@@ -27,10 +27,3 @@ alias lld='ls -lF | grep '^d''
 alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 alias top="top -o cpu"
 
-export STATUSAPP_DB_TEST_URL='postgres://nwagensonner@localhost:5432/nwagensonner?sslmode=disable'
-export STATUSAPP_CONNECTION_STRING='postgres://nwagensonner@localhost/nwagensonner?sslmode=disable'
-
-#toolmanager settings
-export TM_BUCKET_UUID=4983F680-1B8B-4C46-9E2B-D6E0DF9D61D9
-export TM_SERVER_PORT=5000
-export TM_NEO4J_URL='http://neo4j:test@localhost:7474'
