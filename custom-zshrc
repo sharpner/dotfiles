@@ -14,7 +14,7 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew c
 
 #suspend on afk
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
+alias gbpurge='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "develop" | grep -v "staging" | xargs -n 1 git branch -d'
 # aliases
 alias map="xargs -n1"
 alias gop='cd $GOPATH'
