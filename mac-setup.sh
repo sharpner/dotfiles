@@ -58,6 +58,9 @@ brew install graphviz
 # for markdonw preview
 npm -g install instant-markdown-d
 
+#utility for deploying ios test applications
+npm install -g ios-deploy
+
 #global git setup
 git config --global user.name "n.wagensonner"
 git config --global user.email "n.wagensonner@manyminds.de"

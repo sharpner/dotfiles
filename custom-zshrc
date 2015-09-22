@@ -26,6 +26,7 @@ alias top="top -o cpu"
 #alias vim='nvim'
 alias cd='cd -P'
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/nwagensonner/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
