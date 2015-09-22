@@ -81,6 +81,8 @@ brew cask install seil
 brew cask install smoothmouse
 source ~/.bash_profile
 
+sudo gem install lunchy
+
 #installing vim dependencies
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 

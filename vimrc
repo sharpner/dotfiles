@@ -108,6 +108,7 @@ let tempFile = tempname()
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 " NERDTree
 nmap <leader>m :NERDTreeToggle<CR>
+nmap <leader>n :tabnext<CR>
 nmap <F2> :NERDTreeFind<CR>
 
 " fix win 
