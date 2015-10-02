@@ -203,6 +203,8 @@ map <leader><leader>r :NERDTreeFind<cr>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+au FileType go nmap <Leader>l <Plug>(go-metalinter)
+
 "Gdb command inactive because not working correctly.
 " au FileType go nmap <Leader>h :!go build -gcflags "-N -l" -o /tmp/compile-%-tempFile<CR><CR> <ESC>:ConqueGdb /tmp/compile-%-tempFile<CR><CR>
 " au VimLeavePre *.go :!rm /tmp/compile-*-tempFile  
