@@ -25,10 +25,11 @@ alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 alias top="top -o cpu"
 #alias vim='nvim'
 alias cd='cd -P'
-
+alias gf='git diff-tree --no-commit-id --name-only -r'
 
 export HISTSIZE=100000
 
+export GO15VENDOREXPERIMENT=1
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/nwagensonner/.boot2docker/certs/boot2docker-vm
