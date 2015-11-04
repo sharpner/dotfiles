@@ -1,9 +1,0 @@
-Host manyminds
-  HostName manyminds.de
-  Port 222
-  User nwagensonner
-
-Host manyminds-root
-  HostName manyminds.de
-  Port 222
-  User root
