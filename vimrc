@@ -8,6 +8,8 @@ if exists("&undodir")
     set undodir=~/.vim/undo
 endif
 
+set undofile   " Maintain undo history between sessions
+
 syntax on
 set nocompatible              " be iMproved, required
 set encoding=utf8
