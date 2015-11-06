@@ -38,6 +38,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-sensible'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tomasr/molokai'
