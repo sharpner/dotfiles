@@ -29,6 +29,9 @@ mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 mkdir -p ~/bin
 
+#installing screensaver
+./saver.sh
+
 #install bin tools
 cp goclone ~/bin
 
