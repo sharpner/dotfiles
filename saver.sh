@@ -7,3 +7,5 @@ brew cask install aerial
 /usr/bin/defaults -currentHost write com.apple.screensaver "moduleDict" -dict-add "type" -int "0" 
 /usr/bin/defaults -currentHost write com.apple.screensaver 'ShowClock' -bool "false"
 /usr/bin/defaults -currentHost write com.apple.screensaver 'tokenRemovalAction' -int "0"
+
+killall cfprefsd
