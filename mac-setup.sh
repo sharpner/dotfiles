@@ -77,7 +77,6 @@ brew install caskroom/cask/brew-cask
 brew cask install iterm2
 brew cask install dropbox
 brew cask install vlc
-brew cask install gpgtools
 brew cask install virtualbox
 brew cask install menumeters
 brew cask install vagrant
