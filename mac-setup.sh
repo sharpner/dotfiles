@@ -29,9 +29,6 @@ mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 mkdir -p ~/bin
 
-#installing screensaver
-./saver.sh
-
 #install bin tools
 cp goclone ~/bin
 
@@ -57,6 +54,10 @@ brew install ctags
 brew install boot2docker
 brew install csfml
 brew install graphviz 
+
+#installing screensaver
+./saver.sh
+
 
 # for markdonw preview
 npm -g install instant-markdown-d
