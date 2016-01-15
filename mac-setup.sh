@@ -135,4 +135,3 @@ rm ~/.zshrc && ln -s `pwd`/zshrc ~/.zshrc
 
 echo "All done. "
 echo "Install your private key file to ~/.ssh/id_rsa"
-echo "Run import-cacert.sh or sign-gdb.sh manually if necessary."
