@@ -51,9 +51,9 @@ brew install npm
 brew install mercurial
 brew install bazaar
 brew install ctags
-brew install boot2docker
 brew install csfml
 brew install graphviz 
+brew install docker-machine
 
 #installing screensaver
 ./saver.sh
