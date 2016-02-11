@@ -14,7 +14,7 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew c
 
 #suspend on afk
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-alias gbpurge='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "develop" | grep -v "staging" | xargs -n 1 git branch -d'
+alias gbpurge='git branch -a  | grep -v remote | grep -v \* | grep -v master | map git branch -D'
 # aliases
 alias map="xargs -n1"
 alias gop='cd $GOPATH'
@@ -26,6 +26,7 @@ alias top="top -o cpu"
 #alias vim='nvim'
 alias cd='cd -P'
 alias gf='git diff-tree --no-commit-id --name-only -r'
+alias gitdiff='git diff --color | diff-so-fancy'
 
 export HISTSIZE=100000
 

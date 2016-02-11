@@ -61,6 +61,8 @@ brew install docker-machine
 
 # for markdonw preview
 npm -g install instant-markdown-d
+# install diff so fancy
+npm install -g diff-so-fancy
 
 #utility for deploying ios test applications
 npm install -g ios-deploy
