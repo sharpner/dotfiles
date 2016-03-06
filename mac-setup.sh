@@ -54,6 +54,7 @@ brew install ctags
 brew install csfml
 brew install graphviz 
 brew install docker-machine
+brew install tree
 
 #installing screensaver
 ./saver.sh
