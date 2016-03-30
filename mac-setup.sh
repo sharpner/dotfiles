@@ -94,6 +94,8 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ln -s `pwd`/nvimrc ~/.nvimrc
 ln -s `pwd`/vimrc ~/.vimrc
+
+ln -s `pwd`/mongorc.js ~/.mongorc.js
 #install all bundled git plugins
 vim +PluginInstall +qall
 
