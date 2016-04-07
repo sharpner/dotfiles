@@ -138,5 +138,8 @@ cd ~/dotfiles/powerline-fonts/ && ./install.sh && cd ~/dotfiles
 
 rm ~/.zshrc && ln -s `pwd`/zshrc ~/.zshrc
 
+git config --global user.signingkey A28E65D8
+git config --global commit.gpgsign true
+
 echo "All done. "
 echo "Install your private key file to ~/.ssh/id_rsa"
