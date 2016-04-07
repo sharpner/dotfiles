@@ -72,6 +72,8 @@ npm install -g ios-deploy
 git config --global user.name "n.wagensonner"
 git config --global user.email "n.wagensonner@manyminds.de"
 git config --global push.default simple
+git config --global user.signingkey A28E65D8
+git config --global commit.gpgsign true
 
 #install cask for brew
 brew install caskroom/cask/brew-cask
@@ -137,9 +139,6 @@ git clone git@github.com:powerline/fonts.git ~/dotfiles/powerline-fonts/
 cd ~/dotfiles/powerline-fonts/ && ./install.sh && cd ~/dotfiles
 
 rm ~/.zshrc && ln -s `pwd`/zshrc ~/.zshrc
-
-git config --global user.signingkey A28E65D8
-git config --global commit.gpgsign true
 
 echo "All done. "
 echo "Install your private key file to ~/.ssh/id_rsa"
