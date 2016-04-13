@@ -128,6 +128,10 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 #disable startup sound
 sudo nvram SystemAudioVolume=%80
 
+# autoconfigure seil
+defaults write org.pqrs.Seil sysctl -dict enable_capslock 1 keycode_capslock 53
+source ./keyboard-setup.sh
+
 #if the hard disk gets very low, run the following command
 #hash tmutil &> /dev/null && sudo tmutil disablelocal
 echo "Now installing oh-my-zsh"
