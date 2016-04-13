@@ -118,6 +118,12 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 #disable app quarantine
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
+# Disable smart quotes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable smart dashes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
 #faster responses on resume
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
