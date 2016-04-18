@@ -131,6 +131,19 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 chflags nohidden ~/Library
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+#safari settings
+
+# Remove useless icons from Safari’s bookmarks bar
+defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+
+# Enable the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+# Add a context menu item for showing the Web Inspector in web views
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
 #disable startup sound
 sudo nvram SystemAudioVolume=%80
 
