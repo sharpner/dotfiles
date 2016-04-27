@@ -94,7 +94,8 @@ sudo gem install lunchy
 #installing vim dependencies
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-ln -s `pwd`/nvimrc ~/.nvimrc
+mkdir ~/.config/nvim/
+ln -s `pwd`/nvimrc ~/.config/nvim/init.vim
 ln -s `pwd`/vimrc ~/.vimrc
 
 ln -s `pwd`/mongorc.js ~/.mongorc.js
