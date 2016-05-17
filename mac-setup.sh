@@ -40,6 +40,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 
 #install brew dependencies
+brew install gpg-agent
 brew install wget
 brew install weechat
 brew install mc
