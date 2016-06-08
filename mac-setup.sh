@@ -28,12 +28,14 @@ mkdir -p ~/.vim/backups
 mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 mkdir -p ~/bin
+mkdir -p ~/.gnupg/
 
 #install bin tools
 cp goclone ~/bin
 
 #install fonts
 cp font/*.otf ~/Library/Fonts/
+cp gpg-agent.conf ~/.gnupg/
 
 #install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
