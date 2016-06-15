@@ -87,7 +87,6 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install vlc
 brew cask install virtualbox
-brew cask install menumeters
 brew cask install vagrant
 brew cask install seil 
 brew cask install smoothmouse
@@ -103,7 +102,7 @@ ln -s `pwd`/nvimrc ~/.config/nvim/init.vim
 ln -s `pwd`/vimrc ~/.vimrc
 
 ln -s `pwd`/mongorc.js ~/.mongorc.js
-#install all bundled git plugins
+#install all bundled vim plugins
 vim +PluginInstall +qall
 
 #go deps
