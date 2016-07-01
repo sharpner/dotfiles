@@ -59,7 +59,7 @@ brew install csfml
 brew install graphviz 
 brew install docker-machine
 brew install tree
-
+brew install gpg
 #installing screensaver
 ./saver.sh
 
@@ -89,6 +89,8 @@ brew cask install vlc
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install seil 
+brew cask install whatsapp 
+brew cask install telegram 
 brew cask install smoothmouse
 source ~/.bash_profile
 
@@ -96,6 +98,10 @@ sudo gem install lunchy
 
 #installing vim dependencies
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+#import secret gpg keyds
+gpg --allow-secret-key-import --import ~/Dropbox/Schlüssel/2016-06-04-github.asc
+
 
 mkdir ~/.config/nvim/
 ln -s `pwd`/nvimrc ~/.config/nvim/init.vim
