@@ -61,8 +61,6 @@ brew install docker-machine
 brew install tree
 brew install gpg
 #installing screensaver
-./saver.sh
-
 
 # for markdonw preview
 npm -g install instant-markdown-d
