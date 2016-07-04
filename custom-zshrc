@@ -29,6 +29,10 @@ alias gf='git diff-tree --no-commit-id --name-only -r'
 alias gitdiff='git diff --color | diff-so-fancy'
 alias reload-hosts='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 
+if [ -f ~/dotfiles/api-token ] ; then
+  source ~/dotfiles/api-token
+fi
+
 export HISTSIZE=100000
 export HOMEBREW_NO_ANALYTICS=1
 export GO15VENDOREXPERIMENT=1
