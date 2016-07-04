@@ -89,6 +89,7 @@ brew cask install vagrant
 brew cask install seil 
 brew cask install whatsapp 
 brew cask install telegram 
+brew cask install toggldesktop
 brew cask install smoothmouse
 source ~/.bash_profile
 
