@@ -61,6 +61,8 @@ brew install docker-machine
 brew install docker
 brew install tree
 brew install gpg
+brew install pinentry-mac
+brew install watch
 #installing screensaver
 
 # for markdonw preview
