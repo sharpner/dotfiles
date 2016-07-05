@@ -58,6 +58,7 @@ brew install ctags
 brew install csfml
 brew install graphviz 
 brew install docker-machine
+brew install docker
 brew install tree
 brew install gpg
 #installing screensaver
