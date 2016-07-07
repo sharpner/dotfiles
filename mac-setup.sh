@@ -46,6 +46,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 
 #install brew dependencies
+brew install socat
 brew install tree
 brew install gpg-agent
 brew install wget
