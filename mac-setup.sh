@@ -21,6 +21,10 @@ sudo scutil --set HostName $hostname
 sudo scutil --set LocalHostName $hostname
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $hostname
 
+
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
+
 #create folder structure
 mkdir -p ~/Development/Go
 mkdir -p ~/.ssh/
