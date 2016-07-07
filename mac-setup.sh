@@ -84,6 +84,8 @@ git config --global push.default simple
 git config --global user.signingkey A28E65D8
 git config --global commit.gpgsign true
 git config --global gpg.program gpg2
+git config --global core.excludesfile ~/.gitignore_global
+ln -s `pwd`/gitignore_global ~/.gitignore_global
 
 #install cask for brew
 brew install caskroom/cask/brew-cask
