@@ -50,7 +50,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'majutsushi/tagbar' 
+Plugin 'majutsushi/tagbar'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'maksimr/vim-jsbeautify'
@@ -85,8 +85,19 @@ let g:syntastic_enable_signs=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_html_checkers=['']
 
-let g:go_fmt_command = "goimports"
 
+nmap <leader>T :TagbarToggle<CR>
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_fmt_command = "goimports"
+let g:go_fmt_fail_silently = 1
+
+let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
 
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
@@ -94,7 +105,6 @@ au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
-nmap <leader>T :TagbarToggle<CR>
 au FileType go nmap gd <Plug>(go-def)
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
@@ -111,7 +121,7 @@ nmap <leader>m :NERDTreeToggle<CR>
 nmap <leader>n :tabnext<CR>
 nmap <F2> :NERDTreeFind<CR>
 
-" fix win 
+" fix win
 nmap <leader><leader># <ESC>:%s/<c-M>$//
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.DS_Store']
@@ -133,16 +143,16 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 let g:ctrlp_custom_ignore = 'node_modules\|bower_components'
 
-let g:miniBufExplMapWindowNavVim = 1 
-let g:miniBufExplMapWindowNavArrows = 1 
-let g:miniBufExplMapCTabSwitchBufs = 1 
-let g:miniBufExplModSelTarget = 1 
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
 let g:godef_split=0
 
 
 " Tagbar settings
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
-noremap <Leader>y :TagbarToggle<CR>       
+noremap <Leader>y :TagbarToggle<CR>
 
 " Rainbow Paranthesis
 " au VimEnter * RainbowParenthesesToggle
@@ -193,10 +203,6 @@ let g:tagbar_type_go = {
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-
 "Nerdtree
 map <leader><leader>r :NERDTreeFind<cr>
 
@@ -207,7 +213,7 @@ au FileType go nmap <Leader>l <Plug>(go-metalinter)
 
 "Gdb command inactive because not working correctly.
 " au FileType go nmap <Leader>h :!go build -gcflags "-N -l" -o /tmp/compile-%-tempFile<CR><CR> <ESC>:ConqueGdb /tmp/compile-%-tempFile<CR><CR>
-" au VimLeavePre *.go :!rm /tmp/compile-*-tempFile  
+" au VimLeavePre *.go :!rm /tmp/compile-*-tempFile
 
 for char in [ '_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%' ]
   execute 'xnoremap i' . char . ' :<C-u>normal! T' . char . 'vt' . char . '<CR>'
