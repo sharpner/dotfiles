@@ -5,7 +5,7 @@ read hostname
 if [ -z "$hostname" ] ; then
   echo "Hostname must be set."
   exit 1
-fi 
+fi
 
 #get root access"
 echo "We need root access to set the hostname"
@@ -37,6 +37,8 @@ mkdir -p ~/.gnupg/
 #install bin tools
 cp goclone ~/bin
 
+#tmux configuration
+cp tmux.conf ~/.tmux.con
 #install fonts
 cp font/*.otf ~/Library/Fonts/
 cp gpg-agent.conf ~/.gnupg/
@@ -61,13 +63,14 @@ brew install mercurial
 brew install bazaar
 brew install ctags
 brew install csfml
-brew install graphviz 
+brew install graphviz
 brew install docker-machine
 brew install docker
 brew install tree
 brew install gpg
 brew install pinentry-mac
 brew install watch
+brew install tmux
 #installing screensaver
 
 # for markdonw preview
@@ -97,9 +100,9 @@ brew cask install dropbox
 brew cask install vlc
 brew cask install virtualbox
 brew cask install vagrant
-brew cask install seil 
-brew cask install whatsapp 
-brew cask install telegram 
+brew cask install seil
+brew cask install whatsapp
+brew cask install telegram
 brew cask install toggldesktop
 brew cask install smoothmouse
 source ~/.bash_profile
