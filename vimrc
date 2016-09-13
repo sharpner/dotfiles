@@ -63,6 +63,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'rust-lang/rust.vim'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
