@@ -30,6 +30,7 @@ alias gitdiff='git diff --color | diff-so-fancy'
 alias reload-hosts='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 alias dcss='/Applications/Dungeon\ Crawl\ Stone\ Soup\ -\ Console.app/Contents/Resources/crawl'
+alias strace='sudo dtruss -t open_nocancel -p'
 
 if [ -f ~/dotfiles/api-token ] ; then
   source ~/dotfiles/api-token
