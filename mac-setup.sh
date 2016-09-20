@@ -96,7 +96,6 @@ brew install caskroom/cask/brew-cask
 
 #install closed source applications
 brew cask install iterm2
-brew cask install dropbox
 brew cask install vlc
 brew cask install virtualbox
 brew cask install vagrant
