@@ -10,7 +10,7 @@ export PATH=$PATH:~/bin
 export PATH=$GOBIN:/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 # utility commands
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm update npm -g; npm update -g; git -C ~/dotfiles pull --rebase'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; git -C ~/dotfiles pull --rebase'
 
 #suspend on afk
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
