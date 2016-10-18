@@ -33,6 +33,7 @@ mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 mkdir -p ~/bin
 mkdir -p ~/.gnupg/
+mkdir -p ~/.karabiner.d/configuration/
 
 #install bin tools
 cp goclone ~/bin
@@ -118,7 +119,7 @@ gpg --allow-secret-key-import --import ~/Dropbox/Schlüssel/2016-06-04-github.as
 mkdir ~/.config/nvim/
 ln -s `pwd`/nvimrc ~/.config/nvim/init.vim
 ln -s `pwd`/vimrc ~/.vimrc
-
+ln -s `pwd`/karabiner.json ~/.karabiner.d/configuration/karabiner.json
 ln -s `pwd`/mongorc.js ~/.mongorc.js
 #install all bundled vim plugins
 vim +PluginInstall +qall
