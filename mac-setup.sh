@@ -104,7 +104,6 @@ brew cask install seil
 brew cask install whatsapp
 brew cask install telegram
 brew cask install toggldesktop
-brew cask install smoothmouse
 source ~/.bash_profile
 
 sudo gem install lunchy
@@ -171,8 +170,10 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 sudo nvram SystemAudioVolume=%80
 
 # autoconfigure seil
-defaults write org.pqrs.Seil sysctl -dict enable_capslock 1 keycode_capslock 53
 source ./keyboard-setup.sh
+
+# disable mouse acceleration
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
 #if the hard disk gets very low, run the following command
 #hash tmutil &> /dev/null && sudo tmutil disablelocal
