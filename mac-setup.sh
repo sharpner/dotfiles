@@ -100,10 +100,8 @@ brew cask install iterm2
 brew cask install vlc
 brew cask install virtualbox
 brew cask install vagrant
-brew cask install seil
 brew cask install whatsapp
 brew cask install telegram
-brew cask install toggldesktop
 source ~/.bash_profile
 
 sudo gem install lunchy
@@ -112,7 +110,7 @@ sudo gem install lunchy
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #import secret gpg keyds
-gpg --allow-secret-key-import --import ~/Dropbox/Schlüssel/2016-06-04-github.asc
+gpg --allow-secret-key-import --import ~/Library/Mobile\ Documents/com~apple~CloudDocs/Schlüssel/2016-06-04-github.asc
 
 
 mkdir ~/.config/nvim/
@@ -169,9 +167,6 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 #disable startup sound
 sudo nvram SystemAudioVolume=%80
 
-# autoconfigure seil
-source ./keyboard-setup.sh
-
 # disable mouse acceleration
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
@@ -180,10 +175,10 @@ defaults write .GlobalPreferences com.apple.mouse.scaling -1
 echo "Now installing oh-my-zsh"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-git clone git@github.com:powerline/fonts.git ~/dotfiles/powerline-fonts/
+#git clone git@github.com:powerline/fonts.git ~/dotfiles/powerline-fonts/
 
 #install powerline fonts
-cd ~/dotfiles/powerline-fonts/ && ./install.sh && cd ~/dotfiles
+#cd ~/dotfiles/powerline-fonts/ && ./install.sh && cd ~/dotfiles
 
 rm ~/.zshrc && ln -s `pwd`/zshrc ~/.zshrc
 

@@ -64,6 +64,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'rust-lang/rust.vim'
+Plugin 'flowtype/vim-flow'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -230,3 +231,7 @@ noremap <Right> <NOP>
 
 autocmd BufWritePre * :%s/\s\+$//e
 
+let g:flow#autoclose = 1
+let g:flow#omnifunc = 1
+let g:flow#errjmp = 1
+let g:flow#enable = 1
