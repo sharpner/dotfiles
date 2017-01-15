@@ -58,7 +58,7 @@ brew install mc
 brew install mongodb
 brew install go --with-cc-all
 brew install git
-brew install vim --override-system-vi --with-python3
+brew install vim --with-override-system-vi --with-python3
 brew install npm
 brew install mercurial
 brew install bazaar
