@@ -98,6 +98,7 @@ brew install caskroom/cask/brew-cask
 #install closed source applications
 brew cask install iterm2
 brew cask install vlc
+brew cask install beamer
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install whatsapp
