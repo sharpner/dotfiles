@@ -27,3 +27,4 @@ alias lld='ls -lF | grep '^d''
 alias vnc='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 alias top="top -o cpu"
 
+TERM=screen-256color-bce
