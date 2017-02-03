@@ -103,6 +103,8 @@ brew cask install virtualbox
 brew cask install vagrant
 brew cask install whatsapp
 brew cask install telegram
+brew cask install little-snitch
+brew cask install micro-snitch
 brew cask install karabiner-elements
 source ~/.bash_profile
 
