@@ -21,6 +21,7 @@ sudo scutil --set HostName $hostname
 sudo scutil --set LocalHostName $hostname
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $hostname
 sudo defaults write .GlobalPreferences com.apple.mouse.scaling -1
+sudo defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
