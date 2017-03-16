@@ -2,6 +2,7 @@
 setopt autolist
 setopt noautomenu
 
+alias vim=nvim
 export GOPATH=~/Development/Go
 export GOBIN=~/Development/Go/bin
 
