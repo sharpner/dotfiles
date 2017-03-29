@@ -50,6 +50,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 
 #install brew dependencies
+brew install ag
 brew install socat
 brew install tree
 brew install gpg-agent
@@ -60,6 +61,7 @@ brew install mongodb
 brew install go --with-cc-all
 brew install git
 brew install vim --with-override-system-vi --with-python3
+brew install neovim/neovim/neovim
 brew install npm
 brew install mercurial
 brew install bazaar
@@ -73,8 +75,10 @@ brew install gpg
 brew install pinentry-mac
 brew install watch
 brew install tmux
-#installing screensaver
 
+# neovim stuff
+sudo gem install neovim
+pip3 install neovim
 # for markdonw preview
 npm -g install instant-markdown-d
 # install diff so fancy

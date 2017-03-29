@@ -1,2 +1,4 @@
+.phpcd/
+.tern-port
 /.idea
 .DS_Store
