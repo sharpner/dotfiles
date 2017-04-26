@@ -13,6 +13,7 @@ export PATH=$GOBIN:/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 # utility commands
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; git -C ~/dotfiles pull --rebase'
 
+alias grep='ag'
 #suspend on afk
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias gbpurge='git branch -a  | grep -v remote | grep -v \* | grep -v master | map git branch -D'
