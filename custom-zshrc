@@ -46,3 +46,5 @@ export HOMEBREW_NO_ANALYTICS=1
 export DOCKER_TLS_VERIFY="1"
 #eval $(docker-machine env default)
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+source ~/.custom-aliases
